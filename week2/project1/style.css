@@ -1,0 +1,20 @@
+div > h2 {
+    color:darkgreen
+}
+.headline {
+    font-family: georgia;
+    text-align: center;
+}
+#image {
+    padding: 10px;
+    float: left;
+}
+.label {
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
