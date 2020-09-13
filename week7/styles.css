@@ -1,0 +1,227 @@
+#all {
+    background-color: lightcyan;
+}
+
+
+#header {
+    background-image: url(https://physicsworld.com/wp-content/uploads/2019/08/baking-ingredients-1050329742-iStock_tbrainina-1024x576.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-attachment: fixed;
+    width: 490px;
+    height: 400px;
+}
+
+#header2 {
+    background-image: url(https://images.immediate.co.uk/production/volatile/sites/2/2018/05/Jaffa-cupcakes-0228cdb.jpg?quality=90&crop=18px%2C4249px%2C6155px%2C2648px&resize=960%2C408);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-attachment: fixed;
+    width: 490px;
+    height: 400px;
+}
+
+#header3 {
+    background-image: url(https://indorehd.com/wp-content/uploads/2018/08/Cake-flavors-to-Indore.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-attachment: fixed;
+    width: 490px;
+    height: 400px;
+}
+
+.nav {
+    padding: 8px;
+    width: 100%;
+    background-color: #dddddd;
+}
+
+.nav-item {  
+    display: inline;
+    text-decoration: none;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    padding: 20px;
+    color: red;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+.title {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+    color: red
+}
+
+#intro {
+    position: relative;
+    left: 10px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    text-align: center;
+}
+
+.label {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+}
+
+.grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 4px;
+    padding-left: 50px;
+}
+
+.grid-img {
+    width: 300px;
+    height: 300px; 
+    padding: 10px;
+}
+
+.grid-img:hover {
+    transform: scale(1.05);
+}
+
+#info {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 490px;
+    margin: auto;
+    overflow: auto; 
+    padding: 20px;
+} 
+ 
+.gallery {
+    margin: 5px;
+    float: left;
+    width: 320px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    left: 50px;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+.desc {
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.responsive {
+    width: 100%;
+}
+
+.table {
+    position: relative;
+    left: 30px;
+    font-size: 15px;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    padding: 30px;
+}
+
+@media screen and (min-width: 700px) {
+    #header {
+        width: 768px;
+    }
+
+    #header2 {
+        width: 768px;
+    }
+    #header3{
+        width: 768px;
+    }
+
+    .grid-img {
+        width: 320px;
+        height: 320px;
+        padding: 20px;
+    }
+
+    .flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 700px;
+    } 
+
+    .gallery-img {
+        height: auto;
+        margin: 30px;
+        padding: 30px;
+        padding-left: 30px;
+    }
+
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    } 
+
+    .table {
+        font-size: 25px;
+        padding: 40px;
+        left: 25px;
+    }
+}
+
+@media screen and (min-width: 1000px){  
+    #header {
+        width: 1430px;
+    }
+
+    #header2 {
+        width: 1430px;
+    }
+
+    #header3 {
+        width: 1430px;
+    }
+    .nav {
+        width: 100%;
+    }
+    #intro {
+        left: 50px;
+        font-size: 30px;
+    }
+     
+    .nav {
+        text-align: center;
+        padding: 8px;
+        width: 1400px;
+        background-color: #dddddd;
+    }
+
+    .flex-container {
+        width: 1450px;
+        column-gap: 10px;
+    } 
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 4px;
+    }
+    .responsive {
+        width: 24.99999%;
+        float: left;
+        padding: 10px;
+    }
+
+    .table {
+        position: relative;
+        left: 500px;
+    }
+}
